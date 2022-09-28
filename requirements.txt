@@ -1,0 +1,4 @@
+pylatex
+pandas
+numpy
+streamlit
