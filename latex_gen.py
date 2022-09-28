@@ -18,7 +18,7 @@ st.write(order)
 
 
 
-df_coc = pd.read_csv('September 28, 2022/2_NM.csv')
+df_coc = pd.read_csv(files[0])
 #%%
 df_coc['Collection Date /Time'] = pd.to_datetime(df_coc['Collection Date /Time']).dt.date
 samples= []
