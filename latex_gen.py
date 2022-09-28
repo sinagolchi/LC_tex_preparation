@@ -78,7 +78,7 @@ for sample in codes_latex:
     doc.append(NoEscape(r'\addresslabel[\centering\scriptsize]{\centering' + sample + '}'))
 
 # doc.generate_tex('test 2')
-file = doc.generate_pdf('NM_Sep 28, 2022')
+file = doc.generate_pdf('NM_Sep 28, 2022',compiler='pdflatex')
 st.download_button('Download PDF',data=open('NM_Sep 28, 2022.pdf','rb'),file_name='test.pdf')
 
 
