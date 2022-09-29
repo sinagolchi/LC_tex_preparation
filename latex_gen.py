@@ -79,7 +79,9 @@ for sample in codes_latex:
 
 # doc.generate_tex('test 2')
 file = doc.generate_tex('NM_Sep 28, 2022')
-st.download_button('Download PDF',data=open('NM_Sep 28, 2022.tex','rb'),file_name='test.tex')
+st.download_button('Download TeX',data=open('NM_Sep 28, 2022.tex','rb'),file_name='test.tex')
+doc.generate_pdf('NM_Sep 28, 2022',clean_tex=True)
+st.download_button('Download PDF',data=open('NM_Sep 28, 2022.pdf','rb'),file_name='test.pdf')
 
 
 
