@@ -82,6 +82,7 @@ file = doc.generate_tex('NM_Sep 28, 2022')
 st.download_button('Download TeX',data=open('NM_Sep 28, 2022.tex','rb'),file_name='test.tex')
 import os
 st.write(os.getcwd())
+st.write(os.listdir('.'))
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
     st.write(file)
