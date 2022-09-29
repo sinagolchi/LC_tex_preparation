@@ -87,8 +87,10 @@ files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
     st.write(file)
 
-
-doc.generate_pdf('NM_Sep 28, 2022',clean_tex=True)
+try:
+    doc.generate_pdf('NM_Sep 28, 2022',clean_tex=True)
+except:
+    st.download_button('Download log', data=open('NM_Sep 28, 2022.log', 'rb'), file_name='error.log')
 
 st.download_button('Download PDF',data=open('NM_Sep 28, 2022.pdf','rb'),file_name='test.pdf')
 
