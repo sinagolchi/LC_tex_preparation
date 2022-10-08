@@ -2,3 +2,4 @@ pylatex
 pandas
 numpy
 streamlit
+openpyxl
